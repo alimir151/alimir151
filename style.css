@@ -1,0 +1,271 @@
+/* Extra small devices (phones, less than 600px) */
+@media only screen and (max-width: 599px) {
+  .example {
+    background: lightblue; 
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: red;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra extra large devices (larger desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .example {
+    background: pink;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em 1.5em;
+}
+
+/* Navigation Bar CSS */
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: gray;
+  font-size: large;
+  margin: 0px 15px;
+}
+
+.navbar li a:hover {
+  color: blueviolet;
+}
+
+/* Profile CSS */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers items horizontally in a column flex container */
+  justify-content: center; /* Centers items vertically in a column flex container */
+  width: 300px;
+  padding: 20px;
+}
+
+
+.profile_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_details {
+  margin-left: 20px;
+  text-align: center;
+}
+/*index CSS*/
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.flex_class {
+  display: flex;
+  flex: 2;
+  border: 0px solid gray;
+}
+
+.profile:first-child {
+  flex-grow: 1;
+
+}
+.about p, table{
+  margin-left: 20px;
+  margin-bottom: 0px; /* Space between list items */
+  margin-top: 50px;
+  font-weight: normal; 
+  font-size: 1em;
+  color: #666; 
+
+}
+.skills {
+    flex: 2;
+    background-color: #f8f8f8;
+    border: 1px solid gray;
+    padding: 20px;
+
+}
+.footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-top: 2px solid grey;
+    box-sizing: border-box;
+  }
+
+
+  .progress-bar {
+    margin-bottom: 15px;
+    margin-left: 20px;
+  }
+  
+  progress {
+    width: 100%;
+    height: 20px;
+  }
+  
+  /* Customize the color of the progress bars */
+  #sales::-webkit-progress-value,
+  #sales::-moz-progress-bar {
+    background-color: blue;
+  }
+  
+  #leadership::-webkit-progress-value,
+  #leadership::-moz-progress-bar {
+    background-color: blue;
+  }
+  
+  #html::-webkit-progress-value,
+  #html::-moz-progress-bar {
+    background-color: blue;
+  }
+  
+  #python::-webkit-progress-value,
+  #python::-moz-progress-bar {
+    background-color: blue;
+  }
+  
+
+
+/*ALL HTML Files Basic Styling*/
+.education, .experience, .flex_class, .skills, .interests{
+  flex: 2; /* Cover 2/3rds of the container */
+  background-color: #f8f8f8;
+  border: 1px solid gray;
+  padding: 20px;
+  font-size: 1.2em;  /* Larger font size for prominence */
+  font-weight: bold; /* Bold font weight for emphasis */
+  color: #333;       /* Dark color for contrast */
+  margin: 0px; /* Space between the title and the content below */
+}
+
+.education-entry, .experience-entry{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education-info, .experience-info {
+  flex: 3;
+}
+
+/*All titles Styling*/
+.education h2, .experience h2, .skills h2, .interests h2, .about h2 {
+  font-weight: bold;
+  margin-left: 20px;
+  
+}
+
+.years {
+  font-size: 0.8em;
+}
+
+.education-details, .experience-details{
+  flex: 2;
+  margin-left: 100px;
+}
+
+.university, .location, .company {
+  font-size: 0.8em;
+  margin: 25px 0;
+  font-size: 0.8em;     
+  color: #666;      
+
+}
+
+.credentials-request {
+  color: #aaa; /* A faint color */
+  text-align: left; /* Aligns text with the education content */
+  font-size: 0.8em; 
+  margin-left: 20px; /* Adjusts alignment with the education content */
+}
+
+.credentials-request a, a:hover {
+  color: blueviolet;
+}
+
+.interests-list {
+    padding: 0; /* Removes default padding */
+    text-align: left; /* Aligns list items to the left */
+    max-width: 100%; 
+}
+
+.interests-list li {
+    list-style-type: square;
+    margin-bottom: 50px; /* Space between list items */
+    margin-top: 50px;
+    font-weight: normal; 
+    font-size: 1em;
+    color: #666;
+
+}

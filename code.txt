@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3em 1.5em;
+}
+
+/* Navigation Bar CSS */
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: gray;
+  font-size: large;
+  margin: 0px 15px;
+}
+
+.navbar li a:hover {
+  color: blueviolet;
+}
+
+/* Profile CSS */
+
+/* .profile {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 50% 50% 50% 50%;
+  } */
+
+.profile {
+  display: flex;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  align-items: flex-start;
+  width: 300px;
+  padding: 20px;
+  ;
+}
+
+
+.profile_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_details {
+  margin-left: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.flex_class {
+  flex: 4;
+  border: 2px solid blueviolet;
+  margin: 10px;
+}
+
+.profile:first-child {
+  flex-grow: 1;
+
+}
+
+.about {
+  padding: 20px;
+  ;
+}
